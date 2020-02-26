@@ -1,0 +1,39 @@
+@media (max-width: 767px) {
+    .home-carousel,
+    .ant-carousel .slick-slide img,
+    .ant-carousel .slick-slide {
+        height: 100vh;
+    }
+
+    .nav_toggle_menu {
+        display: block;
+    }
+
+    /*nav ul li a {*/
+        /*display: none;*/
+    /*}*/
+
+    nav {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        padding: 0 0 10px;
+        text-align: center;
+    }
+
+    nav ul.d-none {
+        display: none;
+    }
+
+    nav ul li a {
+        padding: 5px 20px;
+    }
+
+    .header .ant-row-flex {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

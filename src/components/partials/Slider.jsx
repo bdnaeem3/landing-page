@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import { Carousel } from 'antd';
 import Banner3 from '../../assets/img/slider/banner3.jpg'
-import Banner9 from '../../assets/img/slider/banner_9.png'
+import Banner9 from '../../assets/img/slider/banner_9.jpg'
 import Healthy from '../../assets/img/slider/healthy.jpg'
-import Lianhef from '../../assets/img/slider/lianhefabu_down.png'
+import Lianhef from '../../assets/img/slider/lianhe.jpg'
 
 
 export default class Slider extends Component {
@@ -21,9 +21,9 @@ export default class Slider extends Component {
     render(){
         return(
             <Carousel
+                className={`home-carousel`}
                 asNavFor={this.state.nav}
-                ref={slider => (this.slider = slider)}
-                autoplay>
+                ref={slider => (this.slider = slider)}>
                 <div>
                     <img src={Banner3} alt={'Banner3'}/>
                 </div>
