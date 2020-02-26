@@ -1,3 +1,25 @@
+button:focus {
+    outline: none;
+}
+
+p {
+    margin: 0;
+}
+
+@media (max-width: 767px) {
+
+    .header .ant-row-flex {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
 .container {
     max-width: 1170px;
     margin: 0 auto;
@@ -6,14 +28,40 @@
 
 nav ul {
     display: flex;
-    list-style: none;
-    margin: 0;
 }
+
+@media (max-width: 767px) {
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        padding: 0 0 10px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+    nav ul.d-none {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    nav {
+        width: 100%;
+    }
+}
+
 nav ul li a {
     color: white;
     font-size: 1rem;
     padding: 10px 20px;
     display: block;
+}
+
+@media (max-width: 767px) {
+    nav ul li a {
+        padding: 5px 20px;
+    }
 }
 
 .ant-carousel .slick-slide {
@@ -48,25 +96,195 @@ img {
     height: 80vh;
 }
 
+@media (max-width: 767px) {
+    .home-carousel,
+    .ant-carousel .slick-slide img,
+    .ant-carousel .slick-slide {
+        height: 100vh;
+    }
+}
+
+
 .header {
     position: relative;
 }
 
 .nav_toggle_menu {
     position: absolute;
-    top: 30px;
+    top: 40px;
     right: 10px;
     transform: translateY(-50%);
     cursor: pointer;
     display: none;
+    background: transparent;
+    border: none;
 }
 
-.nav_toggle_menu img {
+@media (max-width: 767px) {
+    .nav_toggle_menu {
+        display: block;
+    }
+}
+
+.nav_toggle_menu svg {
     width: 20px;
     height: 20px;
     color: white;
 }
 
-.header .ant-row-flex {
-    /*justify-content: space-between;*/
+.footer {
+    padding: 10px 0;
+}
+
+.footer ul {
+    display: flex;
+}
+
+.footer ul li a {
+    color: white;
+    font-size: 1rem;
+    padding: 10px;
+    display: block;
+}
+
+.footer ul li a svg {
+    width: auto;
+    height: 16px;
+}
+
+.footer p {
+    color: white;
+}
+
+.facebook:hover {
+    color: #4267b2;
+}
+
+.instagram:hover {
+    color: #cb2d8a;
+}
+
+.twitter:hover {
+    color: #53a8e7;
+}
+
+.linkedin:hover {
+    color: #005e8e;
+}
+
+.youtube:hover {
+    color: #f80000;
+}
+
+@media (max-width: 767px) {
+    .footer .ant-row-flex {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+
+.features-card {
+    background: #ddd;
+    border-radius: 7px;
+    margin: 10px 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.features-card img {
+    max-width: 150px;
+}
+
+
+
+.flipping-card {
+    border-radius: 7px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    height: 430px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+@media (max-width: 991px) {
+    .flipping-card {
+        margin: 7px 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .flipping-card {
+        height: 470px;
+    }
+}
+
+@media (max-width: 575px) {
+    .flipping-card {
+        height: 300px;
+    }
+}
+
+.flipping-card .card-front,
+.flipping-card .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: white;
+    backface-visibility: hidden;
+    transition: transform ease 500ms;
+}
+
+.flipping-card.flipped .card-front {
+    transform: rotateY(180deg);
+    display: block;
+}
+
+.flipping-card.flipped .card-back {
+    transform: rotateY(0deg);
+}
+
+.flipping-card .card-front {
+    z-index: 2;
+    transform: rotateY(0deg);
+    max-width: 100%;
+}
+.flipping-card .card-back {
+    transform: rotateY(-180deg);
+    padding: 20px;
+    font-size: 20px;
+}
+
+.flipping-card-icon {
+    width: 100px;
+    height: 100px;
+    border: 5px solid white;
+    border-radius: 50%;
+    margin: -50px auto 10px;
+    text-align: center;
+    position: relative;
+}
+
+.flipping-card-icon svg {
+    margin-top: 25%;
+    height: 50%;
+    color: white;
+}
+
+.flipping-card h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.card-front img {
+    height: 300px;
+    width: 100%;
+}
+
+@media (max-width: 575px) {
+    .card-front img {
+        height: 175px;
+    }
 }

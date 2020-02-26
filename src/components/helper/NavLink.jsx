@@ -3,7 +3,7 @@ import React from 'react';
 export default props => {
     return(
         <li>
-            <a href={props.link}>{props.name}</a>
+            <a {...props}>{props.children}</a>
         </li>
     )
 }
