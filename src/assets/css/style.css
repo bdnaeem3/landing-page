@@ -6,6 +6,10 @@ p {
     margin: 0;
 }
 
+h2 {
+    margin-bottom: 0;
+}
+
 @media (max-width: 767px) {
 
     .header .ant-row-flex {
@@ -287,4 +291,79 @@ img {
     .card-front img {
         height: 175px;
     }
+}
+
+
+.section-heading {
+    text-align: center;
+}
+
+.section-heading h2 {
+    font-weight: 700;
+    font-size: 1.75rem;
+}
+
+.section-heading p {
+    color: #1c1c1c;
+}
+
+.owl-item .item {
+    background: white;
+    padding: 20px;
+    border-radius: 7px;
+}
+
+.owl-item .item svg {
+    margin-right: 10px;
+}
+
+.review-star {
+    display: flex;
+    align-items: center;
+    background: orange;
+    color: white;
+    padding: 0 7px;
+    border-radius: 7px;
+    margin-top: 10px;
+}
+
+.review-star svg {
+    margin-right: 2px !important;
+}
+
+
+.primary-btn {
+    background: #1890ff;
+    color: white;
+    padding: 10px 30px;
+    display: table;
+    font-size: 1.25rem;
+    border-radius: 3px;
+}
+
+.primary-btn:hover {
+    color: white;
+    background: #0b77da;
+}
+
+.simple-content p {
+    font-size: 1rem;
+    color: #333;
+}
+
+.simple-content p:first-child {
+    color: #a0a0a0;
+}
+
+.simple-content h2 {
+    margin: 10px 0;
+    font-size: 1.75rem;
+}
+
+.simple-content .primary-btn {
+    margin-top: 20px;
+}
+
+.simple-content-image {
+    border-radius: 3px;
 }

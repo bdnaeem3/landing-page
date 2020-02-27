@@ -3,7 +3,7 @@ import { Row, Col } from 'antd';
 
 // Helpers
 import Section from '../helper/Section';
-import FlippingCard, {CardFront, CardBack} from '../helper/FlippingCard'
+import FlippingCard, {CardFront, CardBack} from '../cards/FlippingCard'
 
 // Images
 import Cover from '../../assets/img/slider/banner3.jpg'

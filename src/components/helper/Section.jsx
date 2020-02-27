@@ -7,6 +7,26 @@ export default props => {
             padding: props.padding
         }}>
             <div className={`container`}>
+
+                {
+                    (props.title || props.description) &&
+
+                    <div className={`section-heading`} style={{
+                        paddingBottom: props.titlePaddingBottom
+                    }}>
+                        {
+                            props.title &&
+                            <h2>{props.title}</h2>
+                        }
+
+                        {
+                            props.description &&
+                            <p>{props.description}</p>
+                        }
+                    </div>
+                }
+
+
                 <div className={props.name}>
                     {props.children}
                 </div>

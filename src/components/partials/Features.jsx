@@ -3,7 +3,7 @@ import { Row, Col } from 'antd';
 
 // Helpers
 import Section from '../helper/Section';
-import FeaturesCard from '../helper/FeaturesCard';
+import FeaturesCard from '../cards/FeaturesCard';
 
 // Images
 import logo from '../../logo.svg';
