@@ -6,6 +6,14 @@ export default props => {
             background: props.fullWidthBG,
             padding: props.padding
         }}>
+
+            {
+                props.rightHalfColor &&
+                <div className={`right-half-color`} style={{
+                    background: props.rightHalfColor
+                }}></div>
+            }
+
             <div className={`container`}>
 
                 {

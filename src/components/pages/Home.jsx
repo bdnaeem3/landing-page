@@ -13,6 +13,8 @@ import Features from '../partials/Features'
 import Services from '../partials/Services'
 import TwoColumnContent from '../partials/TwoColumnContent'
 import Testimonials from '../partials/Testimonials'
+import Video from '../partials/VideoSection'
+import Newsletter from '../partials/Newsletter'
 import Footer from '../partials/Footer'
 
 export default () => {
@@ -31,6 +33,8 @@ export default () => {
                 imageRight={true}
             />
             <Testimonials/>
+            <Video/>
+            <Newsletter/>
             <Footer/>
         </main>
     )
