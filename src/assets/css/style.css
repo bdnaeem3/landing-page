@@ -421,13 +421,11 @@ input.submit-btn {
 .newsletter form {
     position: relative;
     z-index: 1;
-    margin-left: 10px;
 }
 
 @media (max-width: 991px) {
     .newsletter form {
         margin-top: 30px;
-        margin-left: 0;
     }
 }
 
@@ -445,10 +443,10 @@ input.submit-btn {
 
 @media (max-width: 991px) {
     .right-half-color {
-        top: 50%;
+        top: 48%;
         left: 0;
         width: 100%;
-        height: 50%;
+        height: 52%;
     }
 }
 

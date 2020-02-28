@@ -51,6 +51,7 @@ export default class Home extends Component {
 
                 <NavBGHandler changeNavBG={this.changeNavBG} navBG={`white`}>
                     <TwoColumnContent
+                        name={`why-us`}
                         smallTitle={`Each component should have the image`}
                         title={`Image + Text Component`}
                         description={`Each component should have the image and the accompanying components. Title, description, ‘target audience’ texts as well a button . On the right should display an image. I should be able to configure all of them as well as swap the positions of the image and the text. Meaning i can choose to have the image on the left or the right.`}

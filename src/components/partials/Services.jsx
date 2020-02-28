@@ -10,7 +10,13 @@ import Cover from '../../assets/img/slider/banner3.jpg'
 
 export default () => {
     return(
-        <Section fullWidthBG={`green`} padding={`50px 0`}>
+        <Section
+            fullWidthBG={`green`}
+            padding={`50px 0`}
+            name={`services`}
+            title={`A title for this entire section`}
+            description={`In this component , each of the cards would have a icon image, cover image, and a title. All easily configurable through props.`}
+        >
             <Row gutter={40} type={`flex`}>
                 <Col xs={24} lg={12}>
                     <FlippingCard>

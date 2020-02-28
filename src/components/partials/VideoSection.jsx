@@ -16,6 +16,7 @@ import Movie from '../../assets/video/movie.mp4'
 export default () => {
     return(
         <Section
+            name={`about-us`}
             padding={`50px 0`}
             fullWidthBG={`url(${bg})no-repeat center/cover`}
             title={`The Best Holiday Camp Ever`}

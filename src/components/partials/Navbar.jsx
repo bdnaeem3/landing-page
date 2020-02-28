@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
 import { Row } from 'antd';
+import AnchorLink from 'react-anchor-link-smooth-scroll'
+
+// Images
 import logo from '../../logo.svg';
 
 // Helpers
@@ -37,12 +40,11 @@ class Navbar extends Component {
                             </svg>
                         </button>
                         <ul className={this.state.mobileMenuOpen ? 'd-flex' : 'd-none'}>
-                            <NavLink href={`/`}>Menu 1</NavLink>
-                            <NavLink href={`/`}>Menu 2</NavLink>
-                            <NavLink href={`/`}>Menu 3</NavLink>
-                            <NavLink href={`/`}>Menu 4</NavLink>
-                            <NavLink href={`/`}>Menu 5</NavLink>
-                            <NavLink href={`/`}>Menu 6</NavLink>
+                            <li><AnchorLink offset='70' href='#features'>Features</AnchorLink></li>
+                            <li><AnchorLink offset='70' href='#services'>Services</AnchorLink></li>
+                            <li><AnchorLink offset='70' href='#why-us'>Why Us</AnchorLink></li>
+                            <li><AnchorLink offset='70' href='#testimonial'>Testimonial</AnchorLink></li>
+                            <li><AnchorLink offset='70' href='#about-us'>About Us</AnchorLink></li>
                         </ul>
                     </nav>
                 </Row>

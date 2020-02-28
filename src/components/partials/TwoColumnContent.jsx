@@ -6,7 +6,10 @@ import Section from '../helper/Section'
 
 export default props => {
     return(
-        <Section padding={`50px 0`}>
+        <Section
+            padding={`50px 0`}
+            name={props.name}
+        >
             <Row gutter={30} type={`flex`} align={`middle`} style={props.imageRight ? {flexDirection: 'row-reverse'} : ''}>
                 <Col lg={12}>
                     {

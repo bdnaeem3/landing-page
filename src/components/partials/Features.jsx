@@ -11,7 +11,10 @@ import logo from '../../logo.svg';
 
 export default () => {
     return(
-        <Section padding={`30px 0`}>
+        <Section
+            padding={`30px 0`}
+            name={`features`}
+        >
             <Row gutter={20} type={`flex`}>
                 <Col sm={12} md={8} lg={4}>
                     <FeaturesCard
