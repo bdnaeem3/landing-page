@@ -40,49 +40,49 @@ export default () => {
                     author={`Naeem Ahmed`}
                     stars={5}
                 >
-                    This component should have the Title , subtext and a slideshow of quote cards that are styled like the above image.
+                    This component should have the Title , subtext and a slideshow of quote cards that are styled like the above image. This component should have the Title , subtext and a slideshow of quote cards that are styled like the above image.
                 </Review>
                 <Review
                     title={`First Review`}
                     author={`Naeem Ahmed`}
                     stars={5}
                 >
-                    This component should have the Title , subtext and a slideshow of quote cards that are styled like the above image.
+                    This component should have the Title , subtext and a slideshow of quote cards that are styled like the above image. This component should have the Title , subtext and a slideshow of quote cards that are styled like the above image.
                 </Review>
                 <Review
                     title={`First Review`}
                     author={`Naeem Ahmed`}
                     stars={5}
                 >
-                    This component should have the Title , subtext and a slideshow of quote cards that are styled like the above image.
+                    This component should have the Title , subtext and a slideshow of quote cards that are styled like the above image. This component should have the Title , subtext and a slideshow of quote cards that are styled like the above image.
                 </Review>
                 <Review
                     title={`First Review`}
                     author={`Naeem Ahmed`}
                     stars={5}
                 >
-                    This component should have the Title , subtext and a slideshow of quote cards that are styled like the above image.
+                    This component should have the Title , subtext and a slideshow of quote cards that are styled like the above image. This component should have the Title , subtext and a slideshow of quote cards that are styled like the above image.
                 </Review>
                 <Review
                     title={`First Review`}
                     author={`Naeem Ahmed`}
                     stars={5}
                 >
-                    This component should have the Title , subtext and a slideshow of quote cards that are styled like the above image.
+                    This component should have the Title , subtext and a slideshow of quote cards that are styled like the above image. This component should have the Title , subtext and a slideshow of quote cards that are styled like the above image.
                 </Review>
                 <Review
                     title={`First Review`}
                     author={`Naeem Ahmed`}
                     stars={5}
                 >
-                    This component should have the Title , subtext and a slideshow of quote cards that are styled like the above image.
+                    This component should have the Title , subtext and a slideshow of quote cards that are styled like the above image. This component should have the Title , subtext and a slideshow of quote cards that are styled like the above image.
                 </Review>
                 <Review
                     title={`First Review`}
                     author={`Naeem Ahmed`}
                     stars={5}
                 >
-                    This component should have the Title , subtext and a slideshow of quote cards that are styled like the above image.
+                    This component should have the Title , subtext and a slideshow of quote cards that are styled like the above image. This component should have the Title , subtext and a slideshow of quote cards that are styled like the above image.
                 </Review>
             </OwlCarousel>
         </Section>
