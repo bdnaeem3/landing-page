@@ -15,7 +15,7 @@ export default () => {
             padding={`30px 0`}
             name={`features`}
         >
-            <Row gutter={20} type={`flex`}>
+            <Row gutter={20} type={`flex`} justify={`center`}>
                 <Col sm={12} md={8} lg={4}>
                     <FeaturesCard
                         imageURL={logo}
