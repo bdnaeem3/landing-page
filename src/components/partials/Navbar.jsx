@@ -7,7 +7,9 @@ import logo from '../../logo.svg';
 
 // Helpers
 import Section from '../helper/Section';
-import NavLink from '../helper/NavLink';
+
+// Icons
+import NavIcon from '../icons/Nav'
 
 
 class Navbar extends Component {
@@ -32,12 +34,7 @@ class Navbar extends Component {
 
                     <nav>
                         <button onClick={this.mobileMenu} className={`nav_toggle_menu`}>
-                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars"
-                                 className="svg-inline--fa fa-bars fa-w-14" role="img"
-                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                <path fill="#ddd"
-                                      d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path>
-                            </svg>
+                            <NavIcon color={`#ddd`}/>
                         </button>
                         <ul className={this.state.mobileMenuOpen ? 'd-flex' : 'd-none'}>
                             <li><AnchorLink offset='70' href='#features'>Features</AnchorLink></li>

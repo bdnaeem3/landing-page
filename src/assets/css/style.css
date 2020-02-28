@@ -409,6 +409,12 @@ input.submit-btn {
     cursor: pointer;
 }
 
+@media (max-width: 575px) {
+    input.submit-btn {
+        margin-left: 0;
+    }
+}
+
 .newsletter h3 {
     color: white;
     font-weight: 700;
@@ -425,12 +431,45 @@ input.submit-btn {
 
 @media (max-width: 991px) {
     .newsletter form {
-        margin-top: 30px;
+        display: table;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 575px) {
+    .newsletter form .ant-row-flex {
+        justify-content: center;
     }
 }
 
 #newsletter {
     position: relative;
+}
+
+@media (max-width: 991px) {
+    #newsletter {
+        padding: 0 !important;
+        text-align: center;
+    }
+}
+
+#newsletter .ant-col {
+    min-height: 100px !important;
+}
+
+@media (max-width: 991px) {
+    #newsletter .ant-col {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+@media (max-width: 575px) {
+    #newsletter .ant-col {
+        min-height: 120px !important;
+    }
 }
 
 .right-half-color {
