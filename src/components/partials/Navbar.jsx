@@ -21,7 +21,7 @@ class Navbar extends Component {
 
     render(){
         return (
-            <Section sectionClass={`fixed-navbar`} name={`header`} fullWidthBG={`rgba(0,0,0,.3)`}>
+            <Section sectionClass={`fixed-navbar`} name={`header`} fullWidthBG={this.props.bgColor}>
                 <Row type="flex" justify="space-between" align="middle">
                     <div className={`logo`}>
                         <img src={logo} width={100} alt="logo" />
