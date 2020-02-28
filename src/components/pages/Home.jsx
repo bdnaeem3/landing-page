@@ -5,6 +5,10 @@ import Button from '../elements/Buttons'
 
 // Images
 import SliderImage from '../../assets/img/slider/banner_9.jpg'
+import bg from '../../assets/img/bg/video.jpg'
+
+// Video
+import Movie from '../../assets/video/movie.mp4'
 
 // Page Partials
 import Navbar from '../partials/Navbar'
@@ -66,7 +70,27 @@ export default class Home extends Component {
                 </NavBGHandler>
 
                 <NavBGHandler changeNavBG={this.changeNavBG} navBG={`white`}>
-                    <Video/>
+                    <Video
+                        fullWidthBG={`url(${bg})no-repeat center/cover`}
+                        name={`about-us`}
+                        padding={`50px 0`}
+                        title={`The Best Holiday Camp Ever`}
+                        description={` This component should have a video , title and subtext. The background image must also be easily configurable. Use a React Video player instead of an iframe for the video player.`}
+                        titlePaddingBottom={40}
+                        videoURL={Movie}
+                    />
+                </NavBGHandler>
+
+                <NavBGHandler changeNavBG={this.changeNavBG} navBG={`red`}>
+                    <Video
+                        fullWidthBG={`url(${bg})no-repeat center/cover`}
+                        name={`about-us`}
+                        padding={`50px 0`}
+                        title={`The Best Holiday Camp Ever`}
+                        description={` This component should have a video , title and subtext. The background image must also be easily configurable. Use a React Video player instead of an iframe for the video player.`}
+                        titlePaddingBottom={40}
+                        videoURL={'https://www.youtube.com/watch?v=d46Azg3Pm4c'}
+                    />
                 </NavBGHandler>
 
                 <Newsletter/>

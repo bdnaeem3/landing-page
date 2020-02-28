@@ -1,34 +1,36 @@
 import React from 'react'
 import {Row} from 'antd'
-
-// Elements
-import Video from '../elements/Video'
+import ReactPlayer from 'react-player'
+import Media from "react-media"
 
 // Helpers
 import Section from '../helper/Section'
 
-// Images
-import bg from '../../assets/img/bg/video.jpg'
 
-// Video
-import Movie from '../../assets/video/movie.mp4'
+export default props => {
 
-export default () => {
     return(
         <Section
-            name={`about-us`}
-            padding={`50px 0`}
-            fullWidthBG={`url(${bg})no-repeat center/cover`}
-            title={`The Best Holiday Camp Ever`}
-            description={` This component should have a video , title and subtext. The background image must also be easily configurable. Use a React Video player instead of an iframe for the video player.`}
-            titlePaddingBottom={40}
+            name={props.name}
+            padding={props.padding}
+            fullWidthBG={props.fullWidthBG}
+            title={props.title}
+            description={props.description}
+            titlePaddingBottom={props.titlePaddingBottom}
         >
             <Row type={`flex`} justify={`center`}>
-                <Video
-                    link={Movie}
-                    width={800}
-                    height={600}
-                />
+                <Media query={{minWidth: 768}}>
+                    {
+                        matches => (
+                            matches ?
+                                <ReactPlayer controls url={props.videoURL} width={800} height={600} />
+                                :
+                                <ReactPlayer controls url={props.videoURL} width={400} height={325} />
+                        )
+
+                    }
+                </Media>
+
             </Row>
         </Section>
     )
