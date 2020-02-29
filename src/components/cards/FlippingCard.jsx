@@ -31,7 +31,13 @@ export const CardFront = props => {
             <p className={`flipping-card-icon`} style={{
                 background: props.iconBG
             }}>
-                {props.icon}
+
+                {
+                    props.image ?
+                        <img src={props.image} alt={props.title}/>
+                        :
+                        props.icon
+                }
             </p>
             <h2>{props.title}</h2>
         </div>

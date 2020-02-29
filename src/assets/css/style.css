@@ -199,7 +199,9 @@ img {
     }
 }
 
-
+.features .ant-col {
+    display: flex;
+}
 
 .features-card {
     background: #ddd;
@@ -207,10 +209,11 @@ img {
     margin: 10px 0;
     padding: 20px;
     text-align: center;
+    width: 100%;
 }
 
 .features-card img {
-    max-width: 150px;
+    max-width: 80px;
 }
 
 
@@ -251,6 +254,7 @@ img {
     background: white;
     backface-visibility: hidden;
     transition: transform ease 500ms;
+    text-align: center;
 }
 
 .flipping-card.flipped .card-front {
@@ -283,9 +287,11 @@ img {
     position: relative;
 }
 
+.flipping-card-icon img,
 .flipping-card-icon svg {
     margin-top: 25%;
     height: 50%;
+    width: auto;
     color: white;
 }
 
@@ -455,13 +461,13 @@ input.submit-btn {
 
 #newsletter .ant-col {
     min-height: 100px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 @media (max-width: 991px) {
     #newsletter .ant-col {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
         width: 100%;
     }
 }
@@ -509,4 +515,21 @@ video {
     position: absolute;
     top: 0;
     left: 0;
+}
+
+.ant-carousel .slick-initialized .slick-slide {
+    position: relative;
+}
+
+.ant-carousel .slick-initialized .slick-slide h3 {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    background: rgba(0,0,0,0.7);
+    padding: 20px 30px;
+    max-width: 75%;
+    font-size: 1.6rem;
+    border-radius: 0 10px 10px 0;
+    text-align: left;
+    width: initial !important;
 }

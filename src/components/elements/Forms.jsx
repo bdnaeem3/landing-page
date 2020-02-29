@@ -9,6 +9,6 @@ export const TextInput = props => {
 
 export const SubmitButton = props => {
     return(
-        <input type={`submit`} className={`submit-btn`} value={props.value || 'Submit'}/>
+        <input type={`submit`} className={`submit-btn`} value={props.value || 'Submit'} onClick={props.onClick}/>
     )
 }

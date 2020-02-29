@@ -22,7 +22,7 @@ export default () => {
                         title={`Trusted`}
                         titleColor={`green`}
                     >
-                        This component would display cards like these, an image, title and text.
+                        This component would display cards
                     </FeaturesCard>
                 </Col>
 
@@ -32,7 +32,7 @@ export default () => {
                         title={`Trusted`}
                         titleColor={`red`}
                     >
-                        This component would display cards like these, an image, title and text.
+                        This component
                     </FeaturesCard>
                 </Col>
 

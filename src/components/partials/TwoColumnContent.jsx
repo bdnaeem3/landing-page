@@ -9,6 +9,9 @@ export default props => {
         <Section
             padding={`50px 0`}
             name={props.name}
+            title={`Loved by parents kids alike`}
+            description={`Read hundreds of reviews`}
+            titlePaddingBottom={40}
         >
             <Row gutter={30} type={`flex`} align={`middle`} style={props.imageRight ? {flexDirection: 'row-reverse'} : ''}>
                 <Col lg={12}>
