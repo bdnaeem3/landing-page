@@ -290,8 +290,8 @@ img {
 .flipping-card-icon img,
 .flipping-card-icon svg {
     margin-top: 25%;
-    height: 50%;
-    width: auto;
+    height: 50% !important;
+    width: auto !important;
     color: white;
 }
 
@@ -523,13 +523,15 @@ video {
 
 .ant-carousel .slick-initialized .slick-slide h3 {
     position: absolute;
-    bottom: 20px;
-    left: 0;
+    top: 50%;
+    left: 50%;
     background: rgba(0,0,0,0.7);
     padding: 20px 30px;
     max-width: 75%;
+    max-height: 75%;
     font-size: 1.6rem;
-    border-radius: 0 10px 10px 0;
+    border-radius: 7px;
     text-align: left;
     width: initial !important;
+    transform: translateX(-50%)translateY(-50%);
 }
