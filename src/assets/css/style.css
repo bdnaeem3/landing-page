@@ -534,4 +534,10 @@ video {
     text-align: left;
     width: initial !important;
     transform: translateX(-50%)translateY(-50%);
+    transition: .3s;
+    opacity: 0;
+}
+
+.ant-carousel .slick-initialized .slick-slide:hover h3 {
+    opacity: 1;
 }

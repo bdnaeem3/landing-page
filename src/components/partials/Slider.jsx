@@ -26,8 +26,10 @@ export default class Slider extends Component {
     render(){
         return(
             <Carousel
+                autoplay={true}
                 className={`home-carousel`}
                 asNavFor={this.state.nav}
+                autoplaySpeed={3000}
                 ref={slider => (this.slider = slider)}>
                 <Slide
                     image={Banner3}
