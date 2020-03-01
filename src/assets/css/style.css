@@ -277,6 +277,7 @@ img {
     font-size: 20px;
 }
 
+.flipping-card-icon-with-bg,
 .flipping-card-icon {
     width: 100px;
     height: 100px;
@@ -285,6 +286,12 @@ img {
     margin: -50px auto 10px;
     text-align: center;
     position: relative;
+}
+
+.flipping-card-icon-with-bg img,
+.flipping-card-icon-with-bg svg {
+    width: 100% !important;
+    height: 100% !important;
 }
 
 .flipping-card-icon img,

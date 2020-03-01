@@ -7,6 +7,7 @@ import FlippingCard, {CardFront, CardBack} from '../cards/FlippingCard'
 
 // Images
 import Cover from '../../assets/img/slider/banner3.jpg'
+import IconImage from '../../assets/img/icons/Game_Icon.png'
 import logo from '../../logo.svg';
 
 export default () => {
@@ -24,7 +25,7 @@ export default () => {
                         <CardFront
                             cover={Cover}
                             image={logo}
-                            iconBG={`black`}
+                            iconWithBG={IconImage}
                             title={`After School`}
                         />
 
