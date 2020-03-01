@@ -264,6 +264,7 @@ img {
 
 .flipping-card.flipped .card-back {
     transform: rotateY(0deg);
+    overflow-y: auto;
 }
 
 .flipping-card .card-front {
