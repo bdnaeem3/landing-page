@@ -32,14 +32,17 @@ export default class Slider extends Component {
                 autoplaySpeed={3000}
                 ref={slider => (this.slider = slider)}>
                 <Slide
+                    mobile_image={Banner9}
                     image={Banner3}
                     title={`This is slider title`}
                 />
                 <Slide
+                    mobile_image={Banner9}
                     image={Banner9}
                     title={`This is slider title`}
                 />
                 <Slide
+                    mobile_image={Banner9}
                     image={Healthy}
                     title={`This is slider title`}
                     titleStyle = {{
@@ -47,6 +50,7 @@ export default class Slider extends Component {
                     }}
                 />
                 <Slide
+                    mobile_image={Banner9}
                     image={Lianhef}
                     title={`This is slider title`}
                 />

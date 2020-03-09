@@ -335,13 +335,13 @@ img {
     color: #1c1c1c;
 }
 
-.owl-item .item {
+.testimonial .owl-item .item {
     background: white;
     padding: 30px 20px;
     border-radius: 7px;
 }
 
-.owl-item .item svg {
+.testimonial .owl-item .item svg {
     margin-right: 10px;
 }
 
@@ -550,4 +550,22 @@ video {
 
 .ant-carousel .slick-initialized .slick-slide:hover h3 {
     opacity: 1;
+}
+
+.owl-item .client-info h3,
+.owl-item .client-info p {
+    display: none;
+}
+
+.single-client-info {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.single-client-info img {
+    max-width: 150px;
+    max-height: 150px;
+    width: auto;
+    height: auto;
+    margin-bottom: 20px;
 }

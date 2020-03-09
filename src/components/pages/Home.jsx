@@ -18,6 +18,7 @@ import Services from '../partials/Services'
 import TwoColumnContent from '../partials/TwoColumnContent'
 import Testimonials from '../partials/Testimonials'
 import Video from '../partials/VideoSection'
+import TrustedBy from '../partials/TrustedBy'
 import Newsletter from '../partials/Newsletter'
 import Footer from '../partials/Footer'
 
@@ -79,6 +80,10 @@ export default class Home extends Component {
                         titlePaddingBottom={40}
                         videoURL={Movie}
                     />
+                </NavBGHandler>
+
+                <NavBGHandler changeNavBG={this.changeNavBG} navBG={`white`}>
+                    <TrustedBy/>
                 </NavBGHandler>
 
                 <NavBGHandler changeNavBG={this.changeNavBG} navBG={`red`}>
