@@ -7,7 +7,10 @@ export default props => {
             ?
             <Col lg={8} sm={12} xs={24}>
                 <div className="single-client-info">
-                    <img src={props.image} alt={props.title}/>
+                    <img src={props.image} alt={props.title} style={{
+                        maxWidth: props.imageWidth,
+                        maxHeight: props.imageHeight,
+                    }}/>
                     <h3>{props.title}</h3>
                     <p>{props.children}</p>
                 </div>
