@@ -33,7 +33,7 @@ export default props => {
             </OwlCarousel>
             :
             <div className={`trusted-by-clients`}>
-                <Row gutter={20} type={`flex`}>
+                <Row gutter={20} type={`flex`} justify={'center'}>
                     {props.children}
                 </Row>
             </div>
